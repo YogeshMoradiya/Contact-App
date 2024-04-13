@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:background="@drawable/cbg"
+    tools:context=".Editcontact">
+
+
+    <TextView
+        android:id="@+id/txteditcontact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/bgborder"
+        android:text="Edit Contact"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editnamelayout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/cn"
+        android:layout_marginTop="90dp"
+        android:hint="contact Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editnumlayout"
+        android:layout_below="@+id/editnamelayout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/phone"
+        android:layout_marginTop="40dp"
+        android:hint="contact Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/updatecontact"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+         android:layout_below="@+id/editnumlayout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/black"/>
+
+    <ImageView
+        android:id="@+id/ecancle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editnumlayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/cancle"/>
+
+</RelativeLayout>
